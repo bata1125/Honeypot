@@ -40,6 +40,40 @@
   - 低対話型or 中対話型のサーバ型
 
 - Webサーバを目的に
+  - OS:Dionaea
+    - ネットワークに繋がっているサービスの脆弱性をつくマルウェアを捕まえ、マルウェアのコピーを得る。
+    - 対応しているサービス
+      - Black Hole(
+        - 送信されたデータには応答しない
+      - EPMAP
+        - Port135の監視：Windowsのファイル共有のプロトコル
+      - FTP
+      - HTTP
+      - Memache
+        - アプリケーションの処理効率化、サーバ上のキャッシュを使う
+        - 別のところからロード可能な情報に対する一時的なストレージをメモリー内に提供
+      [参考URL](https://www.ibm.com/developerworks/jp/opensource/library/os-memcached/index.html)
+    - Mirror
+    - MongoDB
+    - MQTT
+    - MSSQL
+    - MySQL
+    - nfq
+      - ポートスキャン
+    - PPTP
+    - SIP (VoIP)
+    - SMB
+      - リモート
+    - TFTP
+      - ファイルを扱うことができるポート69でtftpサーバーを提供
+    - UPnP
+      - ネットワーク機器同士の相互自動認識のプロトコル。
 - sshを目的に
 - ラズパイを使ってハニーポットを作る
 - 観察する
+
+## 参考URL
+
+----
+
+- [ハニーポットをdionaeaで構築してみた](https://qiita.com/k-onishi/items/600b14f5bc25a2418945)
